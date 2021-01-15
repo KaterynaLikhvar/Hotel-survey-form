@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEAD -->
+    <h1 id="title">Hotel Survey Form</h1>
+    <div id="main-form">
+
+        <!-- Greeting -->
+        <div class="description-box">
+            <p id="description">Dear Guest,
+                <p>Please take a few minutes to fill our survey form. Your opinion and comments are very important for us!</p>
+        </div>
+
+        <!-- FORM -->
+        <form id="survey-form" method="GET" action="">
+
+            <!-- Personal data -->
+            <div class="row">
+                <div class="col-left">
+                    <label id="name-label" for="fname">*First name</label>
+                </div>
+                <div class="col-right">
+                    <input class="inputs" type="text" id="name" name="fname" autofocus required placeholder="First name...">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-left">
+                    <label id="name-label" for="lname">*Last name</label>
+                </div>
+                <div class="col-right">
+                    <input class="inputs" type="text" id="lname" name="lname" autofocus required placeholder="Last name...">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-left">
+                    <label id="email-label" for="email">*Email</label>
+                </div>
+                <div class="col-right">
+                    <input class="inputs" type="email" id="email" name="email" autofocus required placeholder="Email...">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-left">
+                    <label id="number-label" for="age">Age</label>
+                </div>
+                <div class="col-right">
+                    <input class="inputs" type="number" id="number" name="age" placeholder="Age" min="16" max="125">
+                </div>
+            </div>
+
+            <!-- Select-list -->
+            <div class="row">
+                <div class="col-left">
+                    <label for="reserv">How did you book your reservation?</label>
+                </div>
+                <div class="col-right">
+
+                    <select id="dropdown" name="reserv">
+                      <option value="-">----</option>
+                      <option value="1">The Hotel Website</option>
+                      <option value="2">Travel Agency</option>
+                      <option value="3*">Booking.com</option>
+                      <option value="2*">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Radio-button -->
+            <div class="row">
+                <div class="col-left">
+                    <label for="recommend">Would you consider recommending our hotel?</label>
+                </div>
+                <div class="col-right">
+                    <ul>
+                        <li class="radio"><label><input class="radio" type="radio" name="recommend" value="yes">Yes</label></li>
+                        <li class="radio"><label><input class="radio" type="radio" name="recommend" value="maybe">Maybe</label></li>
+                        <li class="radio"><label><input class="radio" type="radio" name="recommend" value="no">No</label></li>
+                </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="row">
+                <div class="col-left">
+                    <label for="check">How did you hear about us?</label>
+                </div>
+                <div class="col-right">
+                    <ul>
+                        <li class="checkbox"><label><input class="referral" type="checkbox" name="check" value="1">Search Engine</label></li>
+                        <li class="checkbox"><label><input class="referral" type="checkbox" name="check" value="2">TV</label></li>
+                        <li class="checkbox"><label><input class="referral" type="checkbox" name="check" value="3">Flyers</label></li>
+                        <li class="checkbox"><label><input class="referral" type="checkbox" name="check" value="4">Friends/Family/Colleagues</label></li>
+                        <li class="checkbox"><label><input type="checkbox" class="referral" value="5" name="check">Other</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="row">
+                <div class="col-left">
+                    <label for="comments">Comments & Suggestions:</label>
+                </div>
+                <div class="col-right">
+                    <textarea id="comments" name="comments" placeholder="Comment..."></textarea>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="submit" type="submit">Submit</button></div>
+
+    </div>
+    </form>
+    </div>
+
+
+
+
+</body>
+
+</html>
