@@ -20,52 +20,57 @@
         </div>
 
         <!-- FORM -->
-        <form id="survey-form" method="GET" action="">
+        <form id="survey-form" method="GET" action="/action.php">
 
             <!-- Personal data -->
             <div class="row">
                 <div class="col-left">
-                    <label id="name-label" for="fname">*First name</label>
+                    *First name
                 </div>
                 <div class="col-right">
-                    <input class="inputs" type="text" id="name" name="fname" autofocus required placeholder="First name...">
+                    <label for="f-name-label">
+                      <input class="inputs" type="text" id="f-name-label" name="fname" autofocus required placeholder="First name...">
+                    </label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-left">
-                    <label id="name-label" for="lname">*Last name</label>
+                    *Last name
                 </div>
                 <div class="col-right">
-                    <input class="inputs" type="text" id="lname" name="lname" autofocus required placeholder="Last name...">
+                    <label for="l-name-label"><input class="inputs" type="text" id="l-name-label" name="lname" required placeholder="Last name...">
+                    </label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-left">
-                    <label id="email-label" for="email">*Email</label>
+                    *Email
                 </div>
                 <div class="col-right">
-                    <input class="inputs" type="email" id="email" name="email" autofocus required placeholder="Email...">
+                    <label for="email-label"><input class="inputs" type="email" id="email-label" name="email" required placeholder="Email...">
+                    </label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-left">
-                    <label id="number-label" for="age">Age</label>
+                    Age
                 </div>
                 <div class="col-right">
-                    <input class="inputs" type="number" id="number" name="age" placeholder="Age" min="16" max="125">
+                    <label for="number-label"><input class="inputs" type="number" id="number-label" name="age" placeholder="Age" min="16" max="125">
+                    </label>
                 </div>
             </div>
 
             <!-- Select-list -->
             <div class="row">
                 <div class="col-left">
-                    <label for="reserv">How did you book your reservation?</label>
+                    How did you book your reservation?
                 </div>
-                <div class="col-right">
 
+                <div class="col-right">
                     <select id="dropdown" name="reserv">
                       <option value="-">----</option>
                       <option value="1">The Hotel Website</option>
@@ -79,47 +84,66 @@
             <!-- Radio-button -->
             <div class="row">
                 <div class="col-left">
-                    <label for="recommend">Would you consider recommending our hotel?</label>
+                    Would you consider recommending our hotel?
                 </div>
                 <div class="col-right">
-                    <ul>
-                        <li class="radio"><label><input class="radio" type="radio" name="recommend" value="yes">Yes</label></li>
-                        <li class="radio"><label><input class="radio" type="radio" name="recommend" value="maybe">Maybe</label></li>
-                        <li class="radio"><label><input class="radio" type="radio" name="recommend" value="no">No</label></li>
+                    <ul id="recommend">
+                        <li class="radio"><label for="yes"><input id="yes" class="radio" type="radio" name="recommend" value="yes">Yes</label></li>
+                        <li class="radio"><label for="maybe"><input id="maybe" class="radio" type="radio" name="recommend" value="maybe">Maybe</label></li>
+                        <li class="radio"><label for="no"><input id="no" class="radio" type="radio" name="recommend" value="no">No</label></li>
+                    </ul>
                 </div>
             </div>
 
             <!-- Checkbox -->
             <div class="row">
                 <div class="col-left">
-                    <label for="check">How did you hear about us?</label>
+                    How did you hear about us?
                 </div>
                 <div class="col-right">
                     <ul>
-                        <li class="checkbox"><label><input class="referral" type="checkbox" name="check" value="1">Search Engine</label></li>
-                        <li class="checkbox"><label><input class="referral" type="checkbox" name="check" value="2">TV</label></li>
-                        <li class="checkbox"><label><input class="referral" type="checkbox" name="check" value="3">Flyers</label></li>
-                        <li class="checkbox"><label><input class="referral" type="checkbox" name="check" value="4">Friends/Family/Colleagues</label></li>
-                        <li class="checkbox"><label><input type="checkbox" class="referral" value="5" name="check">Other</label></li>
+                        <li class="checkbox">
+                            <label for="search-engine">
+                              <input id="search-engine" class="referral" type="checkbox" name="check" value="1">Search Engine</label>
+                        </li>
+                        <li class="checkbox">
+                            <label for="tv">
+                              <input id="tv" class="referral" type="checkbox" name="check" value="2">TV</label>
+                        </li>
+                        <li class="checkbox">
+                            <label for="flyers">
+                              <input id="flyers" class="referral" type="checkbox" name="check" value="3">Flyers</label>
+                        </li>
+                        <li class="checkbox">
+                            <label for="friends">
+                              <input id="friends" class="referral" type="checkbox" name="check" value="4">Friends/Family/Colleagues</label>
+                        </li>
+                        <li class="checkbox">
+                            <label for="other">
+                              <input id="other" type="checkbox" class="referral" value="5" name="check">Other</label>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <!-- Comments -->
             <div class="row">
-                <div class="col-left">
+                <div class="col-left ">
                     <label for="comments">Comments & Suggestions:</label>
                 </div>
-                <div class="col-right">
+                <div class="col-right ">
                     <textarea id="comments" name="comments" placeholder="Comment..."></textarea>
                 </div>
             </div>
-            <div class="btn">
-                <button id="submit" type="submit">Submit</button></div>
 
+            <!-- Submit button -->
+            <div class="btn">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+
+        </form>
     </div>
-    </form>
-    </div>
+
 
 
 

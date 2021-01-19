@@ -40,6 +40,7 @@ body {
     text-align: right;
     display: inline-block;
     padding: 5px;
+    font-family: 'Muli', sans-serif;
 }
 
 .col-right {
@@ -55,10 +56,6 @@ body {
     content: "";
     display: table;
     clear: both;
-}
-
-label {
-    font-family: 'Muli', sans-serif;
 }
 
 .inputs {
@@ -147,7 +144,6 @@ ul {
     }
     .col-right {
         width: 100%;
-        float: center;
     }
     .inputs {
         width: 95%;
